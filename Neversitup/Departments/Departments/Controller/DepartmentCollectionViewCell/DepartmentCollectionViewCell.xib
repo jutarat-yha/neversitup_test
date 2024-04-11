@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DepartmentCollectionViewCell" id="lrD-ag-Pjv" customClass="DepartmentCollectionViewCell" customModule="Departments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Oyl-a0-W5e">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-se-ydq">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="235"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a8V-lh-Xq8">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="235"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-uo-eOQ">
+                                <rect key="frame" x="191" y="8" width="49" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-gh-DIB">
+                                        <rect key="frame" x="8" y="4" width="33" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ii6-gh-DIB" secondAttribute="trailing" constant="8" id="6Mo-Hi-itV"/>
+                                    <constraint firstItem="Ii6-gh-DIB" firstAttribute="top" secondItem="9h0-uo-eOQ" secondAttribute="top" constant="4" id="8yx-wK-hr9"/>
+                                    <constraint firstAttribute="height" constant="22" id="GDH-nZ-B6n"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ii6-gh-DIB" secondAttribute="bottom" constant="4" id="KAb-v9-FSs"/>
+                                    <constraint firstItem="Ii6-gh-DIB" firstAttribute="leading" secondItem="9h0-uo-eOQ" secondAttribute="leading" constant="8" id="d4I-Nt-x6y"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-Re-I2Z">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="235"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                <connections>
+                                    <action selector="departmentPressed:" destination="lrD-ag-Pjv" eventType="touchUpInside" id="ega-EB-jnZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HSQ-Re-I2Z" secondAttribute="bottom" id="6eX-pw-msT"/>
+                            <constraint firstItem="a8V-lh-Xq8" firstAttribute="top" secondItem="Jne-se-ydq" secondAttribute="top" id="DbO-4w-m22"/>
+                            <constraint firstAttribute="trailing" secondItem="HSQ-Re-I2Z" secondAttribute="trailing" id="DpN-9T-fkF"/>
+                            <constraint firstAttribute="trailing" secondItem="a8V-lh-Xq8" secondAttribute="trailing" id="UcT-Yt-xhw"/>
+                            <constraint firstItem="a8V-lh-Xq8" firstAttribute="leading" secondItem="Jne-se-ydq" secondAttribute="leading" id="ahB-Em-8mA"/>
+                            <constraint firstItem="HSQ-Re-I2Z" firstAttribute="leading" secondItem="Jne-se-ydq" secondAttribute="leading" id="bk2-oH-pRV"/>
+                            <constraint firstAttribute="bottom" secondItem="a8V-lh-Xq8" secondAttribute="bottom" id="bxD-Tb-cF1"/>
+                            <constraint firstItem="HSQ-Re-I2Z" firstAttribute="top" secondItem="Jne-se-ydq" secondAttribute="top" id="bz9-bt-eJg"/>
+                            <constraint firstAttribute="trailing" secondItem="9h0-uo-eOQ" secondAttribute="trailing" constant="8" id="fBD-Bz-u2e"/>
+                            <constraint firstItem="9h0-uo-eOQ" firstAttribute="top" secondItem="Jne-se-ydq" secondAttribute="top" constant="8" id="hEf-tm-L91"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jne-se-ydq" firstAttribute="top" secondItem="Oyl-a0-W5e" secondAttribute="top" id="Zhj-Nt-U7j"/>
+                    <constraint firstAttribute="trailing" secondItem="Jne-se-ydq" secondAttribute="trailing" id="k8V-Gh-5fc"/>
+                    <constraint firstItem="Jne-se-ydq" firstAttribute="leading" secondItem="Oyl-a0-W5e" secondAttribute="leading" id="kuR-KR-Cbp"/>
+                    <constraint firstAttribute="bottom" secondItem="Jne-se-ydq" secondAttribute="bottom" id="l1A-Nz-lrQ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="248" height="235"/>
+            <connections>
+                <outlet property="buttonView" destination="HSQ-Re-I2Z" id="KUG-hA-I2f"/>
+                <outlet property="imageView" destination="a8V-lh-Xq8" id="5lb-Sc-UUP"/>
+                <outlet property="mainView" destination="Jne-se-ydq" id="f0i-YL-SaP"/>
+                <outlet property="nameLabel" destination="Ii6-gh-DIB" id="J1d-Mv-8Pr"/>
+                <outlet property="nameView" destination="9h0-uo-eOQ" id="2fA-mh-gS5"/>
+            </connections>
+            <point key="canvasLocation" x="-245.80152671755724" y="23.591549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
